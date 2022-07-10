@@ -8,22 +8,24 @@
 import UIKit
 
 class MenuViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func goToAddContact() {
+        let viewController: UIViewController = ContactFormViewController()
+        let animated: Bool = true
+        self.navigationController?.pushViewController(viewController, animated: animated)
     }
-    */
-
+    @IBAction func goToViewContacts() {
+        let viewController: UIViewController = ContactsViewController()
+        let animated: Bool = true
+        self.navigationController?.pushViewController(viewController, animated: animated)
+    }
+    @IBAction func goToWeather() {
+        let viewController: UIViewController = WeatherViewController()
+        let animated: Bool = true
+        self.navigationController?.pushViewController(viewController, animated: animated)
+    }
 }

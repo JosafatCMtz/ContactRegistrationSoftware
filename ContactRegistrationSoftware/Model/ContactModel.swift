@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct Contact {
+    let name, phoneNumber, email, address, notes: String
+}
+typealias Contacts = [Contact]

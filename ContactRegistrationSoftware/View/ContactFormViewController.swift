@@ -18,21 +18,102 @@ class ContactFormViewController: UIViewController {
     @IBOutlet weak var contactEmailValidationText: UILabel!
     @IBOutlet weak var contactAddressTextField: UITextField!
     @IBOutlet weak var contactNotesTextField: UITextField!
+    @IBOutlet weak var saveContactButton: UIButton!
+    
+    private var viewModel: ContactFormViewModel = ContactFormViewModel()
+    private var router: Router = Router()
+    
+    
+    public var editableContact: Contact?
+    public var isEditingContact: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.viewModel.bind(to: self, withRouter: router)
+        let textFields: [UITextField] = [contactNameTextField, contactNumberTextField, conatctEmailTextField, contactAddressTextField, contactNotesTextField]
+        self.addDelegateToFields(textFields)
+        guard let editableContact = editableContact else {
+            return
+        }
+        self.updateTextFieldWith(editableContact)
+    }
+    
+    private func updateTextFieldWith(_ contact: Contact) {
+        contactNameTextField.text = contact.name
+        contactNumberTextField.text = contact.phoneNumber
+        conatctEmailTextField.text = contact.email
+        contactAddressTextField.text = contact.address
+        contactNotesTextField.text = contact.notes
+    }
+    
+    private func addDelegateToFields(_ textFields: [UITextField]) {
+        textFields.forEach { textField in
+            textField.delegate = self
+        }
+    }
+    
+    
+    fileprivate func validateTextFields(_ requiredTextFields: [UITextField], _ errorMessagesLabels: [UILabel]) -> Bool {
+        var isValid: Bool = true
+        requiredTextFields.forEach { textField in
+            guard let indexOftextField = requiredTextFields.firstIndex(of: textField) else { return }
+            if textField.isEmpty {
+                textField.isRequired(messageLabel: errorMessagesLabels[indexOftextField])
+                isValid = false
+            } else {
+                errorMessagesLabels[indexOftextField].isHidden = true
+            }
+        }
+        return isValid
     }
     
     @IBAction func saveContact() {
-        print("saveContact")
+        let requiredTextFields: [UITextField] = [contactNameTextField, contactNumberTextField, conatctEmailTextField]
+        let errorMessagesLabels: [UILabel] = [conatctNameValidationLabel, contactNumberValidationLabel, contactEmailValidationText]
+        if validateTextFields(requiredTextFields, errorMessagesLabels) {
+            let newContact: Contact = .init(name: contactNameTextField.text!,
+                                            phoneNumber: contactNumberTextField.text!,
+                                            email: conatctEmailTextField.text!,
+                                            address: contactAddressTextField.text ?? "",
+                                            notes: contactNotesTextField.text ?? "")
+            if isEditingContact {
+                self.viewModel.editContact(newContact) { result in
+                    switch result {
+                    case .success(let isEditing):
+                        if isEditing {
+                            self.navigationController?.pushViewController(MenuViewController(), animated: true)
+                        }
+                    default:
+                        break
+                    }
+                }
+            } else {
+                self.viewModel.addContact(newContact) { result in
+                    switch result {
+                    case .success(let isAdded):
+                        if isAdded {
+                            self.navigationController?.pushViewController(MenuViewController(), animated: true)
+                        }
+                    default:
+                        break
+                    }
+                }
+            }
+        }
     }
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-        
+extension ContactFormViewController: UITextFieldDelegate {}
+
+extension UITextField {
+    var isEmpty: Bool {
+        if let text = self.text, !text.isEmpty {
+            return false
+        }
+        return true
+    }
+    
+    func isRequired(messageLabel: UILabel) {
+        messageLabel.isHidden = !self.isEmpty
     }
 }

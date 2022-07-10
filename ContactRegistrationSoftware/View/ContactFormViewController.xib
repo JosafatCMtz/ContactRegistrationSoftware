@@ -18,6 +18,7 @@
                 <outlet property="contactNotesTextField" destination="d4n-n9-uRN" id="vXy-45-gjq"/>
                 <outlet property="contactNumberTextField" destination="TqR-WZ-ajw" id="Y0q-t0-om2"/>
                 <outlet property="contactNumberValidationLabel" destination="6ly-UA-sYn" id="H6F-mv-acT"/>
+                <outlet property="saveContactButton" destination="QFS-UM-IpC" id="YrT-uG-fsY"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

@@ -7,23 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1406790C287A262300F66159 /* ContactFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1406790B287A262300F66159 /* ContactFormViewModel.swift */; };
+		1406790F287A4DB600F66159 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1406790D287A4DB600F66159 /* WeatherViewController.swift */; };
+		14067910287A4DB600F66159 /* WeatherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1406790E287A4DB600F66159 /* WeatherViewController.xib */; };
+		14067912287A4DCB00F66159 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14067911287A4DCB00F66159 /* WeatherModel.swift */; };
+		14067914287A4DE500F66159 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14067913287A4DE500F66159 /* WeatherViewModel.swift */; };
 		14449D7A2879533900E543DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14449D792879533900E543DE /* AppDelegate.swift */; };
 		14449D7C2879533900E543DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14449D7B2879533900E543DE /* SceneDelegate.swift */; };
-		14449D7E2879533900E543DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14449D7D2879533900E543DE /* ViewController.swift */; };
-		14449D812879533900E543DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14449D7F2879533900E543DE /* Main.storyboard */; };
 		14449D832879533D00E543DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14449D822879533D00E543DE /* Assets.xcassets */; };
 		14449D862879533D00E543DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14449D842879533D00E543DE /* LaunchScreen.storyboard */; };
+		14449D91287953DD00E543DE /* ContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14449D90287953DD00E543DE /* ContactsViewModel.swift */; };
+		14449D942879540C00E543DE /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14449D932879540C00E543DE /* ContactModel.swift */; };
+		14449D962879545600E543DE /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14449D952879545600E543DE /* Services.swift */; };
+		14449D9A2879573A00E543DE /* ContactFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14449D982879573A00E543DE /* ContactFormViewController.swift */; };
+		14449D9B2879573A00E543DE /* ContactFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14449D992879573A00E543DE /* ContactFormViewController.xib */; };
+		14449DA22879613000E543DE /* ContactsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14449DA02879613000E543DE /* ContactsTableViewCell.swift */; };
+		14449DA32879613000E543DE /* ContactsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14449DA12879613000E543DE /* ContactsTableViewCell.xib */; };
+		14449DA5287962A100E543DE /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14449DA4287962A100E543DE /* Router.swift */; };
+		14449DAC287963BB00E543DE /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14449DAA287963BB00E543DE /* ContactsViewController.swift */; };
+		14449DAD287963BB00E543DE /* ContactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14449DAB287963BB00E543DE /* ContactsViewController.xib */; };
+		14449DB028796D1900E543DE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14449DAE28796D1900E543DE /* MenuViewController.swift */; };
+		14449DB128796D1900E543DE /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14449DAF28796D1900E543DE /* MenuViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1406790B287A262300F66159 /* ContactFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormViewModel.swift; sourceTree = "<group>"; };
+		1406790D287A4DB600F66159 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		1406790E287A4DB600F66159 /* WeatherViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherViewController.xib; sourceTree = "<group>"; };
+		14067911287A4DCB00F66159 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		14067913287A4DE500F66159 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		14449D762879533900E543DE /* ContactRegistrationSoftware.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactRegistrationSoftware.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14449D792879533900E543DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14449D7B2879533900E543DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		14449D7D2879533900E543DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		14449D802879533900E543DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14449D822879533D00E543DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14449D852879533D00E543DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14449D872879533D00E543DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14449D90287953DD00E543DE /* ContactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewModel.swift; sourceTree = "<group>"; };
+		14449D932879540C00E543DE /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
+		14449D952879545600E543DE /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		14449D982879573A00E543DE /* ContactFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormViewController.swift; sourceTree = "<group>"; };
+		14449D992879573A00E543DE /* ContactFormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactFormViewController.xib; sourceTree = "<group>"; };
+		14449DA02879613000E543DE /* ContactsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewCell.swift; sourceTree = "<group>"; };
+		14449DA12879613000E543DE /* ContactsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactsTableViewCell.xib; sourceTree = "<group>"; };
+		14449DA4287962A100E543DE /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		14449DAA287963BB00E543DE /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		14449DAB287963BB00E543DE /* ContactsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactsViewController.xib; sourceTree = "<group>"; };
+		14449DAE28796D1900E543DE /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		14449DAF28796D1900E543DE /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +88,68 @@
 			children = (
 				14449D792879533900E543DE /* AppDelegate.swift */,
 				14449D7B2879533900E543DE /* SceneDelegate.swift */,
-				14449D7D2879533900E543DE /* ViewController.swift */,
-				14449D7F2879533900E543DE /* Main.storyboard */,
-				14449D822879533D00E543DE /* Assets.xcassets */,
+				14449D8E2879538B00E543DE /* View */,
+				14449D92287953EE00E543DE /* Model */,
+				14449D8F287953A500E543DE /* ViewModel */,
+				14449D972879545A00E543DE /* Services */,
+				14449D8D2879538000E543DE /* Resources */,
 				14449D842879533D00E543DE /* LaunchScreen.storyboard */,
 				14449D872879533D00E543DE /* Info.plist */,
 			);
 			path = ContactRegistrationSoftware;
+			sourceTree = "<group>";
+		};
+		14449D8D2879538000E543DE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				14449D822879533D00E543DE /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		14449D8E2879538B00E543DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				14449DAE28796D1900E543DE /* MenuViewController.swift */,
+				14449DAF28796D1900E543DE /* MenuViewController.xib */,
+				14449D982879573A00E543DE /* ContactFormViewController.swift */,
+				14449D992879573A00E543DE /* ContactFormViewController.xib */,
+				14449DAA287963BB00E543DE /* ContactsViewController.swift */,
+				14449DAB287963BB00E543DE /* ContactsViewController.xib */,
+				14449DA02879613000E543DE /* ContactsTableViewCell.swift */,
+				14449DA12879613000E543DE /* ContactsTableViewCell.xib */,
+				1406790D287A4DB600F66159 /* WeatherViewController.swift */,
+				1406790E287A4DB600F66159 /* WeatherViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		14449D8F287953A500E543DE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1406790B287A262300F66159 /* ContactFormViewModel.swift */,
+				14449D90287953DD00E543DE /* ContactsViewModel.swift */,
+				14067913287A4DE500F66159 /* WeatherViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		14449D92287953EE00E543DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				14449D932879540C00E543DE /* ContactModel.swift */,
+				14067911287A4DCB00F66159 /* WeatherModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		14449D972879545A00E543DE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				14449D952879545600E543DE /* Services.swift */,
+				14449DA4287962A100E543DE /* Router.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +211,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				14449D862879533D00E543DE /* LaunchScreen.storyboard in Resources */,
+				14449DB128796D1900E543DE /* MenuViewController.xib in Resources */,
+				14449DAD287963BB00E543DE /* ContactsViewController.xib in Resources */,
+				14449D9B2879573A00E543DE /* ContactFormViewController.xib in Resources */,
 				14449D832879533D00E543DE /* Assets.xcassets in Resources */,
-				14449D812879533900E543DE /* Main.storyboard in Resources */,
+				14449DA32879613000E543DE /* ContactsTableViewCell.xib in Resources */,
+				14067910287A4DB600F66159 /* WeatherViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +227,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14449D7E2879533900E543DE /* ViewController.swift in Sources */,
+				14449D962879545600E543DE /* Services.swift in Sources */,
+				1406790F287A4DB600F66159 /* WeatherViewController.swift in Sources */,
+				14449DB028796D1900E543DE /* MenuViewController.swift in Sources */,
+				14067914287A4DE500F66159 /* WeatherViewModel.swift in Sources */,
+				14449DA5287962A100E543DE /* Router.swift in Sources */,
+				14449DA22879613000E543DE /* ContactsTableViewCell.swift in Sources */,
+				14067912287A4DCB00F66159 /* WeatherModel.swift in Sources */,
+				14449D9A2879573A00E543DE /* ContactFormViewController.swift in Sources */,
+				14449D91287953DD00E543DE /* ContactsViewModel.swift in Sources */,
 				14449D7A2879533900E543DE /* AppDelegate.swift in Sources */,
+				14449D942879540C00E543DE /* ContactModel.swift in Sources */,
+				1406790C287A262300F66159 /* ContactFormViewModel.swift in Sources */,
 				14449D7C2879533900E543DE /* SceneDelegate.swift in Sources */,
+				14449DAC287963BB00E543DE /* ContactsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		14449D7F2879533900E543DE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				14449D802879533900E543DE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		14449D842879533D00E543DE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +384,6 @@
 				INFOPLIST_FILE = ContactRegistrationSoftware/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,7 +395,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,7 +411,6 @@
 				INFOPLIST_FILE = ContactRegistrationSoftware/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +422,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
